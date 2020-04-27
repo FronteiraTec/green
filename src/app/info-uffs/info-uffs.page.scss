@@ -1,0 +1,85 @@
+.img-responsive {
+  margin-bottom: 8rem;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -285px;
+  margin-left: -62px;
+}
+
+.img-responsive2 {
+  margin-bottom: 8rem;
+  width: 110px;
+  height: 100px;
+  position: absolute;
+  top: 53%;
+  left: 25%;
+  margin-top: -30px;
+  margin-left: -62px;
+}
+
+.img-responsive3 {
+  width: 115x;
+  height: 85px;
+  position: absolute;
+  top: 44%;
+  left: 85%;
+  margin-top: 169px;
+  margin-left: -62px;
+}
+
+.text-center {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 8%;
+  margin-top: -160px;
+  margin-left: -62px;
+  text-align: justify;
+}
+
+
+
+.text-center2 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  right: 8%;
+  margin-left: -40px;
+  margin-top: -5px;
+  margin-left: 22px;
+  text-align: justify;
+}
+
+
+
+.text-center3 {
+  position: absolute;
+  top: 57%;
+  left: 20%;
+  right: 37%;
+  margin-top: 100px;
+  margin-left: -46px;
+  text-align: justify;
+}
+
+ion-toolbar {
+  --ion-color-primary: #00693e;
+  --ion-color-primary-rgb: 0, 105, 62;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #00923f;
+  --ion-color-primary-tint: #349c64;
+}
+ion-footer {
+  --ion-color-primary: #00693e;
+  --ion-color-primary-rgb: 0, 105, 62;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #00923f;
+  --ion-color-primary-tint: #349c64;
+}
+
+

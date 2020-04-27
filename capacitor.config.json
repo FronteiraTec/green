@@ -1,0 +1,10 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "green_angular",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
+
+
