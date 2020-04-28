@@ -1,11 +1,11 @@
 <ion-content color="white" padding>
   <ion-grid>
-    <ion-row color="primary" justify-content-center>
+    
       <div class="logo">
         <img src="assets/img/logouffs.png" width="380px" height="70" />
       </div>
 
-      <ion-col align-self-center size-md="5" size-lg="6" size-xs="12">
+      <ion-col class='ion-align-items-center' size-md="5" size-lg="6" size-xs="12">
         <div class="title">
           <label class="title-label"></label>
         </div>
@@ -14,7 +14,8 @@
           <ion-item class="matricula">
             <!-- Esses dois inputs, 'senha e matricula' recebem os mesmos nomes das variaveis declaradas no arquivo login.page.ts
                 e o botão quando clicado (click) 'chama' a função login que faz toda a verificação na login.page.ts-->
-            <ion-input
+               
+                <ion-input
               [(ngModel)]="matricula"
               type="text"
               autocorrect="off"
@@ -35,6 +36,16 @@
               required
             ></ion-input>
           </ion-item>
+          <ion-item class="lembrar" >
+            <ion-checkbox 
+            ng-model="isCheckedCommercial"
+            ngModel
+            ></ion-checkbox> 
+            <ion-label class = 'labelcheck'>
+               Lembrar matrícula
+            </ion-label> 
+          </ion-item>
+          
         </div>
         <div class="login">
           <ion-button
@@ -44,14 +55,11 @@
             expand="block"
             shape="undefined"
             fill="solid"
-            >Login</ion-button
+            >Entrar</ion-button
           >
         </div>
-        <ion-checkbox class="lembrar" 
-        ng-model="isCheckedCommercial"
-        ngModel
-        >Item1</ion-checkbox>   
+       
       </ion-col>
-    </ion-row>
+    
   </ion-grid>
 </ion-content>

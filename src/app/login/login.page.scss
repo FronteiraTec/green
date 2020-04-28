@@ -22,30 +22,61 @@
   text-align: center;
 }
 .matricula {
+  
+  display: inline-block;
+  position: relative;
   height: 60;
   border: 0px solid rgb(238, 22, 22);
   background-color: lightblue;
   position: relative;
   padding-bottom: 0px;
   top: 100px;
+  left: 20%;
+}
+
+.form-login{
+  position: relative;
+  align-content: center;
+  vertical-align: middle;
+  width: 250px;
+  padding-left: 5%;
+
 }
 .senha {
+  left: 10%;
+  display: inline-block;
   border: 0px solid rgb(200, 14, 14);
   background-color: lightblue;
   position: relative;
   padding-bottom: 0px;
   top: 108px;
+  left: 20%;
 }
 .login {
   border: 0px solid rgb(212, 5, 5);
-
+  display: inline-block;
+ 
   position: relative;
   padding-bottom: 0%;
   top: 140px;
+  padding-left: 30%;
 }
 
 .lembrar {
+  align-content: center;
+  margin-top: auto;
+  margin-left: auto;
   position: relative;
   padding-bottom: 0%;
-  top: 140px;
+  height: 50px;
+  top: 120px;
+  left: 45px;
+  
+}
+.labelcheck{
+ 
+  position: relative;
+  align-content: center;
+  padding-left: 20px;
+
 }
