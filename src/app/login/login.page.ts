@@ -32,6 +32,7 @@ export class LoginPage implements OnInit {
   async login() {
     try {
       if (this.matricula == "12345" && this.senha == "admin") {
+        this.menu.enable(true, 'menuLeft');
         this.router.navigate(["home"]);
       } else {
         this.invalidDataToast();
