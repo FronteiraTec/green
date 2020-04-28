@@ -14,8 +14,7 @@
   --ion-color-shade: #2e2929;
   --ion-color-tint: #2e2929;
 }
-.form-login {
-}
+
 .Logo {
   position: absolute;
   width: 100%;
@@ -24,33 +23,62 @@
   text-align: center;
 }
 .matricula {
+  display: inline-block;
+  position: relative;
   height: 60;
-  border: 0px solid rgb(238, 22, 22);
-  background-color: lightblue;
   position: relative;
   padding-bottom: 0px;
   top: 110px;
+  top: 100px;
+  left: 20%;
 }
+
+.form-login {
+  position: relative;
+  align-content: center;
+  vertical-align: middle;
+  width: 250px;
+  padding-left: 5%;
+}
+
 .senha {
-  border: 0px solid rgb(200, 14, 14);
-  background-color: lightblue;
+  left: 10%;
+  display: inline-block;
   position: relative;
   padding-bottom: 0px;
   top: 118px;
+  left: 20%;
 }
 .login {
-  border: 0px solid rgb(212, 5, 5);
-
+  display: inline-block;
   position: relative;
   padding-bottom: 0%;
-  top: 140px;
+  top: 150px;
+  padding-left: 30%;
 }
 
 .lembrar {
+  align-content: center;
+  margin-top: auto;
+  margin-left: auto;
   position: relative;
   padding-bottom: 0%;
   top: 145px;
-  border-radius: 0;
-  //border-style: solid;
-  // transition: all;
+  border-radius: 50;
+  height: 50px;
+  top: 130px;
+  left: 45px;
+  color: #ffffff;
+}
+
+.textocheck {
+  position: relative;
+  align-content: center;
+  padding-left: 10px;
+}
+.esquecisenha {
+  position: relative;
+  align-content: center;
+  padding-left: 10px;
+  top: 165px;
 }
