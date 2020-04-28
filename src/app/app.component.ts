@@ -22,6 +22,7 @@ export class AppComponent {
     { title: "Auto Aviação", url: "/hora-onibus", icon: "bus" },
     { title: "Info UFFS", url: "/info-uffs", icon: "alert-circle" },
     { title: "Configuração", url: "/configuracao", icon: "settings" },
+    { title: "Sair", url: "/login", icon: "exit" },
   ];
   constructor(
     private platform: Platform,
