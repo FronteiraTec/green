@@ -45,6 +45,10 @@ const routes: Routes = [
     path: 'hora-onibus',
     loadChildren: () => import('./hora-onibus/hora-onibus.module').then( m => m.HoraOnibusPageModule)
   },
+  {
+    path: 'calendario',
+    loadChildren: () => import('./calendario/calendario.module').then( m => m.CalendarioPageModule)
+  },
 ];
 
 @NgModule({
