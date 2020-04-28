@@ -14,6 +14,8 @@
   --ion-color-shade: #2e2929;
   --ion-color-tint: #2e2929;
 }
+.form-login {
+}
 .Logo {
   position: absolute;
   width: 100%;
@@ -27,14 +29,14 @@
   background-color: lightblue;
   position: relative;
   padding-bottom: 0px;
-  top: 100px;
+  top: 110px;
 }
 .senha {
   border: 0px solid rgb(200, 14, 14);
   background-color: lightblue;
   position: relative;
   padding-bottom: 0px;
-  top: 108px;
+  top: 118px;
 }
 .login {
   border: 0px solid rgb(212, 5, 5);
@@ -47,5 +49,8 @@
 .lembrar {
   position: relative;
   padding-bottom: 0%;
-  top: 140px;
+  top: 145px;
+  border-radius: 0;
+  //border-style: solid;
+  // transition: all;
 }
