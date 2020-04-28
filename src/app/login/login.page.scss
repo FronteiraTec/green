@@ -1,0 +1,51 @@
+:root {
+  --ion-color-white: #2e2929;
+  --ion-color-white-rgb: 255, 255, 255;
+  --ion-color-white-contrast: #ffffff;
+  --ion-color-white-contrast-rgb: 0, 0, 0;
+  --ion-color-white-shade: #e0e0e0;
+  --ion-color-white-tint: #ffffff;
+}
+.ion-color-white {
+  --ion-color-base: #2a2727;
+  --ion-color-base-rgb: #2e2929;
+  --ion-color-contrast: #2a2929;
+  --ion-color-contrast-rgb: #2e2929;
+  --ion-color-shade: #2e2929;
+  --ion-color-tint: #2e2929;
+}
+.Logo {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10;
+  text-align: center;
+}
+.matricula {
+  height: 60;
+  border: 0px solid rgb(238, 22, 22);
+  background-color: lightblue;
+  position: relative;
+  padding-bottom: 0px;
+  top: 100px;
+}
+.senha {
+  border: 0px solid rgb(200, 14, 14);
+  background-color: lightblue;
+  position: relative;
+  padding-bottom: 0px;
+  top: 108px;
+}
+.login {
+  border: 0px solid rgb(212, 5, 5);
+
+  position: relative;
+  padding-bottom: 0%;
+  top: 140px;
+}
+
+.lembrar {
+  position: relative;
+  padding-bottom: 0%;
+  top: 140px;
+}
