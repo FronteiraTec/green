@@ -1,0 +1,73 @@
+<ion-content color="white" padding>
+  <ion-grid>
+    <div class="logo">
+      <img src="assets/img/logouffs.png" width="380px" height="70" />
+    </div>
+
+    <ion-col
+      class="ion-align-items-center"
+      size-md="5"
+      size-lg="6"
+      size-xs="12"
+    >
+      <div class="title">
+        <label class="title-label"></label>
+      </div>
+
+      <div class="form-login">
+        <ion-item class="matricula">
+          <!-- Esses dois inputs, 'senha e matricula' recebem os mesmos nomes das variaveis declaradas no arquivo login.page.ts
+                e o botão quando clicado (click) 'chama' a função login que faz toda a verificação na login.page.ts-->
+
+          <ion-input
+            [(ngModel)]="matricula"
+            type="text"
+            autocorrect="off"
+            clear-input="true"
+            placeholder="IDUFFS"
+            ngModel
+            required
+          ></ion-input>
+        </ion-item>
+        <ion-item class="senha">
+          <ion-input
+            [(ngModel)]="senha"
+            name="password"
+            type="password"
+            clear-input="true"
+            placeholder="Senha"
+            ngModel
+            required
+          ></ion-input>
+        </ion-item>
+        <ion-item class="lembrar">
+          <ion-checkbox ng-model="isCheckedCommercial"></ion-checkbox>
+          <ion-label class="textocheck">
+            Lembrar matrícula
+          </ion-label>
+        </ion-item>
+      </div>
+      <div class="login">
+        <ion-button
+          size="large"
+          type="submit"
+          (click)="login()"
+          expand="block"
+          shape="undefined"
+          fill="solid"
+          >Entrar</ion-button
+        >
+      </div>
+      <div class="esquecisenha">
+        <ion-button
+          size="small"
+          type="submit"
+          expand="full"
+          fill="clear"
+          shape="undefined"
+          >Esqueceu sua senha?</ion-button
+        >
+      </div>
+    </ion-col>
+  </ion-grid>
+</ion-content>

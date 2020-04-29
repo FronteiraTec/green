@@ -1,0 +1,84 @@
+:root {
+  --ion-color-white: white;
+  --ion-color-white-rgb: 255, 255, 255;
+  --ion-color-white-contrast: #ffffff;
+  --ion-color-white-contrast-rgb: 0, 0, 0;
+  --ion-color-white-shade: #e0e0e0;
+  --ion-color-white-tint: #ffffff;
+}
+.ion-color-white {
+  --ion-color-base: white;
+  --ion-color-base-rgb: white;
+  --ion-color-contrast: white;
+  --ion-color-contrast-rgb: white;
+  --ion-color-shade: white;
+  --ion-color-tint: white;
+}
+
+.Logo {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10;
+  text-align: center;
+}
+.matricula {
+  display: inline-block;
+  position: relative;
+  height: 60;
+  position: relative;
+  padding-bottom: 0px;
+  top: 110px;
+  top: 100px;
+  left: 20%;
+}
+
+.form-login {
+  position: relative;
+  align-content: center;
+  vertical-align: middle;
+  width: 250px;
+  padding-left: 5%;
+}
+
+.senha {
+  left: 10%;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0px;
+  top: 118px;
+  left: 20%;
+}
+.login {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0%;
+  top: 150px;
+  padding-left: 30%;
+}
+
+.lembrar {
+  align-content: center;
+  margin-top: auto;
+  margin-left: auto;
+  position: relative;
+  padding-bottom: 0%;
+  top: 145px;
+  border-radius: 50;
+  height: 50px;
+  top: 130px;
+  left: 45px;
+  color: #ffffff;
+}
+
+.textocheck {
+  position: relative;
+  align-content: center;
+  padding-left: 10px;
+}
+.esquecisenha {
+  position: relative;
+  align-content: center;
+  padding-left: 10px;
+  top: 165px;
+}
