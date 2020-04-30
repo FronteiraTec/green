@@ -6,3 +6,57 @@ ion-toolbar {
     --ion-color-primary-shade: #00923f;
     --ion-color-primary-tint: #349c64;
 }
+
+ion-button {
+    
+    --ion-color-primary: #349c64;
+}
+
+.table {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+}
+
+ion-row {
+    border-bottom: solid 1px #ddd;
+}
+
+.titulo {
+    font-size: 20px;
+}
+
+.title {
+    text-align: left;
+}
+
+ion-col {
+    padding: 6px;
+}
+
+ion-icon {
+    font-size: 25px;
+}
+
+.livroAtrasado {
+    color: red;
+}
+
+.sem-livros {
+    text-align: start;
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+.search-btn {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 33%;
+    
+}
+

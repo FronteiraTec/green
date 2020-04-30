@@ -3,16 +3,59 @@
     <ion-buttons slot ="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>BIBLIOTECA</ion-title>
+    <ion-title>Biblioteca</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
 
-  
-  <ion-buttons >
-    <ion-searchbar placeholder="pesquisar acervo"></ion-searchbar>
+  <ion-grid class="table">
+    <ion-row class="ion-align-items-center">
+      <ion-col size="6" class="titulo">
+        Títulos pendentes
+      </ion-col>
+      <ion-col size="3" class="coluna-meio">
+        Data de retorno
+      </ion-col>
+      <ion-col size="3">
+        Renovar
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="(titulosPendentes.length === 0)" class="sem-livros">
+      <ion-col>Nenhum empréstimo registrado!</ion-col>
+    </ion-row>
+
+    <ion-row *ngFor="let livro of titulosPendentes" class="ion-align-items-center">
+      <ion-col size="6" class="title">
+        {{ livro.titulo}}
+      </ion-col>
+      <ion-col size="3" class="coluna-meio" [ngClass]="{'livroAtrasado': !validarRenovacao(livro.dataDevolucao)}">
+        {{ livro.dataDevolucao | date: 'dd/MM/yy' }}
+      </ion-col>
+      <ion-col size="3" (click)="renovarLivro(livro)">
+        <ion-button>
+          <ion-icon name="sync"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-buttons>
+    <ion-searchbar [(ngModel)]="termoPesquisa" placeholder="Consultar acervo" mode="ios"></ion-searchbar>
   </ion-buttons>
+  <ion-item>
+    <ion-label>Buscar por:</ion-label>
+    <ion-select [(ngModel)]="buscarPor">
+      <ion-select-option value="livre">Livre</ion-select-option>
+      <ion-select-option value="titulo">Titulo</ion-select-option>
+      <ion-select-option value="assunto">Assunto</ion-select-option>
+      <ion-select-option value="autor">Autor</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button class="search-btn">Pesquisar</ion-button>
+
   
 </ion-content>
 
