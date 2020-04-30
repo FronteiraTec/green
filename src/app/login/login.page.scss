@@ -15,13 +15,16 @@
   --ion-color-tint: white;
 }
 
-.Logo {
+.img-responsive {
+  width: 185px;
+  height: 100px;
   position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 10;
-  text-align: center;
+  top: 55%;
+  left: 50%;
+  margin-top: -279px;
+  margin-left: -90px;
 }
+
 .matricula {
   display: inline-block;
   position: relative;
@@ -29,7 +32,6 @@
   position: relative;
   padding-bottom: 0px;
   top: 110px;
-  top: 100px;
   left: 20%;
 }
 
@@ -74,6 +76,7 @@
 .textocheck {
   position: relative;
   align-content: center;
+  //font-family: "fontawesome";
   padding-left: 10px;
 }
 .esquecisenha {
@@ -81,4 +84,20 @@
   align-content: center;
   padding-left: 10px;
   top: 165px;
+}
+ion-toolbar {
+  --ion-color-primary: #00693e;
+  --ion-color-primary-rgb: 0, 105, 62;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #00923f;
+  --ion-color-primary-tint: #349c64;
+}
+ion-footer {
+  --ion-color-primary: #00693e;
+  --ion-color-primary-rgb: 0, 105, 62;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #00923f;
+  --ion-color-primary-tint: #349c64;
 }

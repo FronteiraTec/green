@@ -17,22 +17,20 @@ export class LoginPage implements OnInit {
     private toastController: ToastController
   ) {
     this.activeMenu(); // função para desativar o menu na pagina de login *nao fucionou* coloquei no app.component.html gestureswipe como false, para nao ativar o menu no Login
- 
   }
 
-  activeMenu(){
-
-    this.menu.enable(false, 'menuLeft');
+  activeMenu() {
+    this.menu.enable(false, "menuLeft");
   }
 
   ngOnInit() {}
-  
+
   // a função esta como assíncrona porque porque pensei em talvez usar o firebase para fazer alguns testes de verificação
   // this.router.navigate muda o endereço ../login para ../home, indo para a pagina principal. /home esta definido nas rotas, app-routing.module.ts
   async login() {
     try {
       if (this.matricula == "12345" && this.senha == "admin") {
-        this.menu.enable(true, 'menuLeft');
+        this.menu.enable(true, "menuLeft");
         this.router.navigate(["home"]);
       } else {
         this.invalidDataToast();

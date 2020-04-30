@@ -15,14 +15,17 @@ export class AppComponent {
   public appMenu = [
     { title: "Feed", url: "/home", icon: "home" },
     { title: "Notas", url: "/notas", icon: "create" },
-    { title: "Horarios Aula", url: "/horarios", icon: "time" },
-    { title: "Material Didatico", url: "/material", icon: "book" },
+    { title: "Horários Aula", url: "/horarios", icon: "time" },
+    { title: "Material Didático", url: "/material", icon: "book" },
     { title: "Biblioteca", url: "/biblioteca", icon: "library" },
     { title: "RU", url: "/ru", icon: "restaurant" },
     { title: "Auto Aviação", url: "/hora-onibus", icon: "bus" },
+
+
     { title: "Calendario Acadêmico", url: "/calendario", icon: "calendar" },
+
     { title: "Info UFFS", url: "/info-uffs", icon: "alert-circle" },
-    { title: "Configuração", url: "/configuracao", icon: "settings" },
+    { title: "Configurações", url: "/configuracao", icon: "settings" },
     { title: "Sair", url: "/login", icon: "exit" },
   ];
   constructor(
