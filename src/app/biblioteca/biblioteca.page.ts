@@ -8,6 +8,10 @@ import { ToastController } from '@ionic/angular';
 })
 export class BibliotecaPage implements OnInit {
 
+  termoPesquisa = '';
+  buscarPor = 'livre';
+  resultadosPesquisa = [];
+  
   // Inicializei a variável com alguns livros apenas para poder testar
   titulosPendentes = [
     {

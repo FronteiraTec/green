@@ -41,9 +41,20 @@
     </ion-row>
   </ion-grid>
 
-  <ion-buttons >
-    <ion-searchbar mode="ios" placeholder="pesquisar acervo"></ion-searchbar>
+  <ion-buttons>
+    <ion-searchbar [(ngModel)]="termoPesquisa" placeholder="Consultar acervo" mode="ios"></ion-searchbar>
   </ion-buttons>
+  <ion-item>
+    <ion-label>Buscar por:</ion-label>
+    <ion-select [(ngModel)]="buscarPor">
+      <ion-select-option value="livre">Livre</ion-select-option>
+      <ion-select-option value="titulo">Titulo</ion-select-option>
+      <ion-select-option value="assunto">Assunto</ion-select-option>
+      <ion-select-option value="autor">Autor</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button class="search-btn">Pesquisar</ion-button>
 
   
 </ion-content>
