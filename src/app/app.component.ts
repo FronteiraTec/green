@@ -19,7 +19,7 @@ export class AppComponent {
     { title: "Material Didático", url: "/material", icon: "book" },
     { title: "Biblioteca", url: "/biblioteca", icon: "library" },
     { title: "RU", url: "/ru", icon: "restaurant" },
-    { title: "Auto Aviação", url: "/hora-onibus", icon: "bus" },
+    { title: "Auto Viação", url: "/hora-onibus", icon: "bus" },
 
 
     { title: "Calendario Acadêmico", url: "/calendario", icon: "calendar" },
