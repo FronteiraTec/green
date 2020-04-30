@@ -1,8 +1,17 @@
 ion-toolbar {
-    --ion-color-primary: #00693e;
-    --ion-color-primary-rgb: 0, 105, 62;
-    --ion-color-primary-contrast: #ffffff;
-    --ion-color-primary-contrast-rgb: 255, 255, 255;
-    --ion-color-primary-shade: #00923f;
-    --ion-color-primary-tint: #349c64;
+  --ion-color-primary: #00693e;
+  --ion-color-primary-rgb: 0, 105, 62;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #00923f;
+  --ion-color-primary-tint: #349c64;
+}
+.classcodigo {
+  width: 225px;
+  height: 90px;
+  position: relative;
+  top: 300px;
+  left: 50%;
+  margin-top: -279px;
+  margin-left: -105px;
 }
