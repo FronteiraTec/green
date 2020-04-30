@@ -20,7 +20,7 @@ export class AppComponent {
     { title: "Biblioteca", url: "/biblioteca", icon: "library" },
     { title: "RU", url: "/ru", icon: "restaurant" },
     { title: "Auto Aviação", url: "/hora-onibus", icon: "bus" },
-    { title: "Calendario Acadêmico", url: "/ calendario", icon: "calendar" },
+    { title: "Calendario Acadêmico", url: "/calendario", icon: "calendar" },
     { title: "Info UFFS", url: "/info-uffs", icon: "alert-circle" },
     { title: "Configuração", url: "/configuracao", icon: "settings" },
     { title: "Sair", url: "/login", icon: "exit" },
