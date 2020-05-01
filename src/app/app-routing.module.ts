@@ -42,11 +42,6 @@ const routes: Routes = [
     loadChildren: () => import("./ru/ru.module").then((m) => m.RuPageModule),
   },
   {
-    path: "info-uffs",
-    loadChildren: () =>
-      import("./info-uffs/info-uffs.module").then((m) => m.InfoUffsPageModule),
-  },
-  {
     path: "configuracao",
     loadChildren: () =>
       import("./configuracao/configuracao.module").then(

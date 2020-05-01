@@ -1,1 +1,57 @@
+.img-responsive {
+  //   width: 115x;
+  height: 45px;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  margin-top: 175px;
+  margin-left: -62px;
+}
 
+.text-center {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 8%;
+  margin-top: 120px;
+  margin-left: -62px;
+  text-align: justify;
+  font-size: 15px;
+}
+.conf {
+  font-size: 18px;
+  top: 30px;
+  // z-index: 1;
+  // position: absolute;
+  // top: 160px;
+  // left: 10px;
+  // content: "ON";
+}
+.esquecisenha {
+  position: relative;
+  align-content: center;
+  padding-left: 10px;
+  top: 165px;
+}
+@media only screen and (max-width: 375px) { // iphone 5 ou SE
+  .img-responsive {
+    //   width: 115x;
+    height: 45px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    margin-top: 175px;
+    margin-left: -62px;
+  }
+
+  .text-center {
+    position: absolute;
+    top: 57%;
+    left: 25%;
+    right: 8%;
+    margin-top: 90px;
+    margin-left: -62px;
+    text-align: justify;
+    font-size: 14px;
+  }
+}
