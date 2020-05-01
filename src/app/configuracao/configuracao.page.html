@@ -8,8 +8,30 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content padding>
-  <p>ENTROU AQUIII</p>
-  <p>arruma tudo</p>
+<ion-content>
+  <ion-list>
+    <ion-item-divider color="light">Configurações gerais</ion-item-divider>
+    <ion-item>
+      <ion-icon name="cloud-download-outline"></ion-icon>
+      <ion-label> Download de pdf</ion-label>
+      <ion-toggle [(ngModel)]="config2"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="alarm-outline"></ion-icon>
+      <ion-label>Permitir notificações</ion-label>
+      <ion-toggle [(ngModel)]="config3"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="volume-high-outline"></ion-icon>
+      <ion-label>Volume Notificações</ion-label>
+      <ion-range min="0" max="10" step="2">
+        <ion-label slot="start"></ion-label>
+        <ion-label slot="end"></ion-label>
+      </ion-range>
+    </ion-item>
+    <ion-item-divider color="light">Privacidade</ion-item-divider>
+    <ion-list>
+      <ion-button size="default" type="submit" expand="full" fill="solid">Alterar senha</ion-button>
+    </ion-list>
+  </ion-list>
 </ion-content>
