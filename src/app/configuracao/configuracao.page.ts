@@ -6,6 +6,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./configuracao.page.scss"],
 })
 export class ConfiguracaoPage implements OnInit {
+  public config1: boolean = true;
+  public config2: boolean = true;
+  public config3: boolean = true;
+
   constructor() {}
 
   ngOnInit() {}
