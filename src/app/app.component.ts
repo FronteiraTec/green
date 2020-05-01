@@ -13,14 +13,13 @@ export class AppComponent {
   public selectedIndex = 0;
 
   public appMenu = [
-    { title: "Feed", url: "/home", icon: "home" },
+    { title: "Home", url: "/home", icon: "home" },
     { title: "Notas", url: "/notas", icon: "create" },
     { title: "Horários Aula", url: "/horarios", icon: "time" },
     { title: "Material Didático", url: "/material", icon: "book" },
     { title: "Biblioteca", url: "/biblioteca", icon: "library" },
     { title: "RU", url: "/ru", icon: "restaurant" },
     { title: "Auto Aviação", url: "/hora-onibus", icon: "bus" },
-
 
     { title: "Calendario Acadêmico", url: "/calendario", icon: "calendar" },
 

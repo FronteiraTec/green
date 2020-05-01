@@ -1,15 +1,42 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      CONFIGURAÇÕES
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content padding>
-  <p>ENTROU AQUIII</p>
-  <p>arruma tudo</p>
+ <ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        CONFIGURAÇÕES
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+<ion-list >
+  <ion-item-divider color="light">Configurações gerais</ion-item-divider>
+  <ion-item >
+    <ion-icon name="notifications" item-left></ion-icon>
+    <ion-label>Modo Escuro</ion-label>
+    <ion-toggle [(ngModel)]="config1"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="notifications" item-left></ion-icon>
+    <ion-label>Download de pdf</ion-label>
+    <ion-toggle [(ngModel)]="config2" ></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="notifications" item-left></ion-icon>
+    <ion-label>Permitir notificações</ion-label>
+    <ion-toggle [(ngModel)]="config3"></ion-toggle>
+  </ion-item>
+
+  <ion-item >
+    <ion-label>Volume Notificações</ion-label>
+    <ion-range min="0" max="10" step="2">
+      <ion-label slot="start"></ion-label>
+      <ion-label slot="end"></ion-label>
+    </ion-range>
+  </ion-item>
+  <ion-item-divider color="light">Privacidade</ion-item-divider>
+</ion-list>
 </ion-content>
