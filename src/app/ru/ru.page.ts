@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-ru',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RuPage implements OnInit {
 
-  constructor() { }
+  // constructor() { }
+
+ 
+  link: string;
+  constructor(private sanitize: DomSanitizer){ }
+
+  url(){
+    this.link= "https://www.uffs.edu.br/campi/chapeco/restaurante_universitario";
+    return this.sanitize.bypassSecurityTrustResourceUrl(this.link);
+  }
 
   ngOnInit() {
   }
