@@ -9,10 +9,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-
-  <iframe height="100%" width="100%" [src]="url()"></iframe>
-  <!-- era para ter pegado a imagem da tabela do RU -->
-
+<ion-content>
+  <ion-card class="cardru">
+    <ion-card-header>
+      <ion-card-subtitle>Campus Chapecó</ion-card-subtitle>
+      <ion-card-title>Restaurante Universitário</ion-card-title>
+    </ion-card-header>
+    <img src="assets\img\RU.jpeg" />
+    <ion-card-content>
+      Horário de funcionamento: Segunda a sexta-feira, das 11h15 às 13h e das 17h40 às 19h15.
+      Venda de tickets: Segunda a sexta-feira, das 11h às 13h e 17h30 às 19h15.
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="full" (click)="barra()"> Código de barras de usuário</ion-button>
+  <ion-button expand="full">Cardápio RU da semana</ion-button>
 </ion-content>
-
