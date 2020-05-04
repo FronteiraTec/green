@@ -1,87 +1,79 @@
-// :root {
-//   --ion-color-white: white;
-//   --ion-color-white-rgb: 255, 255, 255;
-//   --ion-color-white-contrast: #ffffff;
-//   --ion-color-white-contrast-rgb: 0, 0, 0;
-//   --ion-color-white-shade: #e0e0e0;
-//   --ion-color-white-tint: #ffffff;
-// }
-// .ion-color-white {
-//   --ion-color-base: white;
-//   --ion-color-base-rgb: white;
-//   --ion-color-contrast: white;
-//   --ion-color-contrast-rgb: white;
-//   --ion-color-shade: white;
-//   --ion-color-tint: white;
-// }
-
 .img-responsive {
-  width: 185px;
-  height: 100px;
+  width: 200px;
+  height: 115px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+ion-content {
+  position: relative;
+}
+
+.container {
   position: absolute;
-  top: 55%;
-  left: 50%;
-  margin-top: -279px;
-  margin-left: -90px;
+  top: 40%;
+  right: 50%;
+  transform: translateY(-40%) translateX(50%);
+  max-height: 500px;
 }
 
-.matricula {
-  display: inline-block;
-  position: relative;
-  height: 60;
-  position: relative;
-  padding-bottom: 0px;
-  top: 110px;
-  left: 20%;
-}
-
-.form-login {
-  position: relative;
-  align-content: center;
-  vertical-align: middle;
-  width: 250px;
-  padding-left: 5%;
-}
-
-.senha {
-  left: 10%;
-  display: inline-block;
-  position: relative;
-  padding-bottom: 0px;
-  top: 118px;
-  left: 20%;
-}
-.login {
-  display: inline-block;
-  position: relative;
-  padding-bottom: 0%;
-  top: 150px;
-  padding-left: 30%;
-}
-
-.lembrar {
-  align-content: center;
-  margin-top: auto;
-  margin-left: auto;
-  position: relative;
-  padding-bottom: 0%;
-  top: 145px;
-  border-radius: 50;
-  height: 50px;
-  top: 130px;
-  left: 45px;
-  color: #666;
+.inputs {
+  width: 280px;
+  margin: auto;
 }
 
 .textocheck {
-  position: relative;
-  align-content: center;
-  //font-family: "fontawesome";
   padding-left: 10px;
+  color: #666;
 }
-.esquecisenha {
-  position: relative;
-  align-content: center;
-  padding-left: 10px;
-  top: 165px;
+
+.login {
+  width: 130px;
+}
+
+
+@media screen and (max-width: 319px){
+  .img-responsive {
+    width: 110px;
+    height: 70px;
+    margin-bottom: 0px;
+  }
+
+  .inputs {
+    width: 200px;
+    margin: auto;
+  }
+
+  .login {
+    width: 100px;
+  }
+}
+
+
+@media screen and (min-width: 500px) and (min-height: 740px) {
+  .img-responsive {
+    width: 380px;
+    height: 210px;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    max-height: 1000px;
+  }
+
+  .inputs {
+    width: 400px;
+    margin: auto;
+  }
+
+  .login {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .lembrar {
+    margin-top: 20px;
+  }
 }

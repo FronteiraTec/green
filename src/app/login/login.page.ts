@@ -10,6 +10,7 @@ import { Router } from "@angular/router";
 export class LoginPage implements OnInit {
   public matricula = "";
   public senha = "";
+  public showPassword:boolean = false;
 
   constructor(
     public menu: MenuController,
@@ -43,8 +44,14 @@ export class LoginPage implements OnInit {
     let toast = await this.toastController.create({
       message: "Dados inválidos, verifique e tente novamente.",
       duration: 1000,
+      position: 'top',
+      mode: 'ios'
     });
 
     toast.present();
+  }
+
+  togglePasswordFieldType(){
+    this.showPassword = !this.showPassword;
   }
 }
