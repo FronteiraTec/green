@@ -63,7 +63,15 @@ const routes: Routes = [
   {
     path: 'calendario',
     loadChildren: () => import('./calendario/calendario.module').then( m => m.CalendarioPageModule)
+  },  {
+    path: 'codigobarra',
+    loadChildren: () => import('./codigobarra/codigobarra.module').then( m => m.CodigobarraPageModule)
   },
+  {
+    path: 'cardapio',
+    loadChildren: () => import('./cardapio/cardapio.module').then( m => m.CardapioPageModule)
+  },
+
 ];
 
 @NgModule({

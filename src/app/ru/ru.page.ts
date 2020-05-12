@@ -1,25 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { Component, OnInit } from "@angular/core";
+import { DomSanitizer } from "@angular/platform-browser";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-ru',
-  templateUrl: './ru.page.html',
-  styleUrls: ['./ru.page.scss'],
+  selector: "app-ru",
+  templateUrl: "./ru.page.html",
+  styleUrls: ["./ru.page.scss"],
 })
 export class RuPage implements OnInit {
+  constructor(private router: Router) {}
 
-  // constructor() { }
-
- 
-  link: string;
-  constructor(private sanitize: DomSanitizer){ }
-
-  url(){
-    this.link= "https://www.uffs.edu.br/campi/chapeco/restaurante_universitario";
-    return this.sanitize.bypassSecurityTrustResourceUrl(this.link);
+  ngOnInit() {}
+  async codigobarra() {
+    this.router.navigate(["codigobarra"]);
   }
-
-  ngOnInit() {
+  async cardapio() {
+    this.router.navigate(["cardapio"]);
   }
-
 }
