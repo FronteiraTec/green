@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-
+import { CalendarModule  } from 'ion2-calendar';
 @NgModule({
   imports: [
     CommonModule,
@@ -16,7 +16,8 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+    CalendarModule
   ],
   declarations: [HomePage]
 })
